@@ -16,5 +16,5 @@ function tailmiq() # If no value is given with tailmiq it defaults to the manage
 alias tailpglog='tail -f $APPLIANCE_PG_DATA/pg_log/postgresql.log'
 
 # Appliance Status:
-alias apstatus='systemctl status --no-pager evmserverd manageiq.slice httpd memcached postgresql repmgr* -n 0; \
+alias apstatus='systemctl status --no-pager manageiq manageiq.slice httpd memcached postgresql repmgr* -n 0; \
 echo -e "\nPostgreSQL service:"; pg_isready'
